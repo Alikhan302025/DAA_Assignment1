@@ -1,17 +1,39 @@
 package org.example;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    static void main() {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        IO.println(String.format("Hello and welcome!"));
+import java.util.Arrays;
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            IO.println("i = " + i);
-        }
+public class Main{
+    public static void main(String[] args){
+
+        int [] originalArray = {42,15,8,99,23,4,16,8,100,1};
+        System.out.println("исходный массив" + Arrays.toString(originalArray));
+        System.out.println("----------");
+
+
+        int[] mergeArray = Arrays.copyOf(originalArray, originalArray.length);
+        Metrics mergeMetrics = new Metrics();
+
+        MergeSort.sort(mergeArray, mergeMetrics);
+
+        // Тест merge
+        System.out.println("После MergeSort: " + Arrays.toString(mergeArray));
+        System.out.println("Сравнений: " + mergeMetrics.getComparisons());
+        System.out.println("Глубина рекурсии: " + mergeMetrics.getMaxDepth());
+        System.out.println("--------");
+
+        // Тест QuickSort
+        int[] quickArray = Arrays.copyOf(originalArray, originalArray.length);
+        Metrics quickMetrics = new Metrics();
+
+        QuickSort.sort(quickArray, quickMetrics);
+
+        System.out.println("После QuickSort: " + Arrays.toString(quickArray));
+        System.out.println("Сравнений: " + quickMetrics.getComparisons());
+        System.out.println("Глубина рекурсии: " + quickMetrics.getMaxDepth());
+
     }
+
+
+
 }
+
