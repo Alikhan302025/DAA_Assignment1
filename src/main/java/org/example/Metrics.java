@@ -16,7 +16,7 @@ public class Metrics {
         }
     }
 
-    public void StartTimer(){
+    public void startTimer(){
         startTime = System.nanoTime();
     }
 
