@@ -21,15 +21,6 @@ public class Main{
         System.out.println("Глубина рекурсии: " + mergeMetrics.getMaxDepth());
         System.out.println("--------");
 
-        // Тест QuickSort
-        int[] quickArray = Arrays.copyOf(originalArray, originalArray.length);
-        Metrics quickMetrics = new Metrics();
-
-        QuickSort.sort(quickArray, quickMetrics);
-
-        System.out.println("После QuickSort: " + Arrays.toString(quickArray));
-        System.out.println("Сравнений: " + quickMetrics.getComparisons());
-        System.out.println("Глубина рекурсии: " + quickMetrics.getMaxDepth());
 
     }
 
