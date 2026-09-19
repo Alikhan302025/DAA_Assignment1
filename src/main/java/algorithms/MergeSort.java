@@ -1,4 +1,6 @@
-package org.example;
+package algorithms;
+
+import metrics.Metrics;
 
 public class MergeSort {
 

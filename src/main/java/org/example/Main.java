@@ -1,5 +1,9 @@
 package org.example;
 
+import algorithms.MergeSort;
+import algorithms.QuickSort;
+import metrics.Metrics;
+
 import java.util.Arrays;
 
 public class Main{
