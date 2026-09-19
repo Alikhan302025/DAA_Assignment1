@@ -1,8 +1,8 @@
-package org.example;
+package daa;
 
-import algorithms.MergeSort;
-import algorithms.QuickSort;
-import metrics.Metrics;
+import daa.algorithms.MergeSort;
+import daa.algorithms.QuickSort;
+import daa.metrics.Metrics;
 
 import java.util.Arrays;
 

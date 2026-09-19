@@ -1,4 +1,4 @@
-package metrics;
+package daa.metrics;
 
 public class Metrics {
     private long comparisons = 0;

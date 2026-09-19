@@ -1,5 +1,5 @@
-package algorithms;
-import metrics.Metrics;
+package daa.algorithms;
+import daa.metrics.Metrics;
 
 import java.util.Random;
 

@@ -1,6 +1,6 @@
-package algorithms;
+package daa.algorithms;
 
-import metrics.Metrics;
+import daa.metrics.Metrics;
 
 import java.util.Random;
 public class QuickSort {
