@@ -26,8 +26,8 @@ public class QuickSelect {
             }
 
             int[] pivots = partition(arr, left, right, metrics);
-            int lt = pivots[0]; // Конец части, где элементы меньше пивота
-            int gt = pivots[1]; // Начало части, где элементы больше пивота
+            int lt = pivots[0]; // Конец части где элементы меньше пивота
+            int gt = pivots[1]; // Начало части где элементы больше пивота
 
             if (k <= lt) {
                 right = lt;

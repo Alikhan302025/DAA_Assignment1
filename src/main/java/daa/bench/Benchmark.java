@@ -48,7 +48,7 @@ public class Benchmark {
         }
 
         Arrays.sort(times);
-        long medianTime = times[RUNS / 2]; // Берем медиану из 5 запусков
+        long medianTime = times[RUNS / 2];
 
         return new Result(algoName, type.name().toLowerCase(), n, medianTime,
                 lastMetrics.getComparisons(), lastMetrics.getMaxDepth());
@@ -60,7 +60,7 @@ public class Benchmark {
 
         for (int i = 0; i < RUNS; i++) {
             int[] arr = ArrayUtils.generate(type, n);
-            int k = n / 2; // Ищем медиану массива
+            int k = n / 2;
             lastMetrics = new Metrics();
 
             QuickSelect.select(arr, k, lastMetrics);

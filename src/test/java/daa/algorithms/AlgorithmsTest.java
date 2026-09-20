@@ -88,6 +88,7 @@ public class AlgorithmsTest {
         }
     }
 
+
     @Test
     void testQuickSelectExceptions() {
         assertThrows(IllegalArgumentException.class, () -> {
